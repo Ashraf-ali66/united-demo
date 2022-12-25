@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://kit.fontawesome.com/43337b2ee9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+  <link rel="manifest" href="favi/site.webmanifest">
+  <link rel="mask-icon" href="favi/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container5{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2%;
+            background-color: rgba(255, 255,255,0.85);
+            
+            
+
+        }
+        .image{
+       
+            width: 100%;
+            height:80%;
+            overflow: hidden;
+        }
+        .image img{
+            width: 100%;
+            border: 5px solid white;
+         
+        }
+        .paragraph{
+  
+            width: 80%;
+            height: 80%;
+
+        }
+        .title{
+            font-size: 55px;
+            color:     rgba(255, 255,255,0.85);;
+            text-decoration: underline;
+            margin-bottom: 3%;
+            
+            
+
+        }
+        .every{
+           
+            background-image: url('./img/united.jpg');
+            background-attachment: fixed;
+            background-blend-mode: darken;
+           
+            background-color: rgba(0, 0,0,0.3);
+            
+        }
+        .text{
+            font-size: 24px;
+            color: #020267;
+            margin-left: 5%;
+            margin-right: 3%;
+           
+          
+        }
+        .resource{
+         background:#74DFE7;
+          width: 33%;
+            padding-bottom: 5%;
+            padding-top: 5%;
+            border-radius: 35px;
+            font-size: 30px;
+            margin-top: 3%;
+            margin-bottom: 2%;
+        }
+        #res{
+            font-size: 30px;
+            color: #020267;
+        }
+      .resource:hover{
+        text-decoration: underline;
+       color: #020267;
+       font-size: 34px;
+      }
+      
+        
+        
+        @media(max-width:1200px)
+        {
+            .image{
+                width: 100%;
+            }
+            .image img{
+                width: 100%;
+            }
+        }
+        @media(max-width:900px)
+        {
+            .container5{
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+            .image{
+                width: 100%;
+                height: 100%;
+            }
+            .image img{
+                width:100%;
+                height: 100%;
+            }
+            .paragraph{
+                width: 90%;
+            }
+        
+    
+           .container5{
+            grid-template-columns: 1fr;
+            gap: 8%;
+           }
+           .p0{
+            margin-top: -15%;
+            margin: 0 10% 10% 5%;
+           }
+           .p1{
+            margin-left: 5%;
+            margin-bottom: -10%;
+           }
+           .p2{
+            margin: 0 0 0 5%;
+           }
+           .p3{
+            margin: 1px 0 0 5%;
+
+           }
+           .p4{
+            margin: 0 0 0 5%;
+           }
+           .p5{
+            margin: 0 0 0 5%;
+           }
+        }
+        @media(max-width:500px)
+        {
+            .text{
+                font-size: 20px;
+            }
+            .p0{
+            margin-top: -15%;
+            margin: 0 10% 10% 5%;
+           }
+           .p1{
+            margin-left: 5%;
+            margin-bottom: -10%;
+           }
+           .p2{
+            margin: 0 0 0 5%;
+           }
+           .p3{
+            margin: 1px 0 0 5%;
+
+           }
+           .image{
+                width: 100%;
+                height: 100%;
+            }
+            .image img{
+                width:100%;
+                height: 100%;
+            }
+           .p4{
+            margin: 0 0 0 5%;
+           }
+           .p5{
+            margin: 0 0 0 5%;
+           }
+           .title{
+            font-size: 35px;
+           }
+           .resource{
+            width: 50%;
+           }
+        }
+        @media(max-width:400px)
+        {
+            .text{
+                font-size: 20px;
+            }
+            .p0{
+            margin-top: -15%;
+            margin: 0 10% 10% 5%;
+           }
+           .p1{
+            margin-left: 5%;
+            margin-bottom: 0;
+           }
+           .p2{
+            margin: 0 0 0 5%;
+           }
+           .p3{
+            margin: 1px 0 0 5%;
+
+           }
+           .p4{
+            margin: 0 0 0 5%;
+           }
+           .p5{
+            margin: 0 0 0 5%;
+           }
+           .title{
+            font-size: 35px;
+           }
+           .image{
+                width: 100%;
+                height: 100%;
+            }
+            .image img{
+                width:100%;
+                height: 100%;
+            }
+        }
+
+          
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html"> <div class="logo">
+           <img src="./voice of united/logo2.png" alt="">
+          <p id="text">United English Boarding <br> School <br>
+        </p> 
+    
+         </div></a>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+           <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+           <li><a class="active" href="./index.html">Home</a></li>
+           <li><a href="./service.html">Services</a></li>
+           <li><a href="./aboutus.html">About</a></li>
+           <li><a href="./admission.html">Admission</a></li>
+           <li><a href="./contact.html">Contact</a></li>
+           <li><a href="./gallery.html">Gallery</a></li>
+           <li><a href="./calender.html">Calender<i style="margin:0  0 0 7px ;" class="fa-solid fa-calendar-days"></i></a></li>
+         
+          </ul>
+    
+       </nav>
+       <hr>
+      <center>  
+        <div class="resource">
+            <a href="https://drive.google.com/drive/folders/1CxpICwRO5qeazfzOBvTjP-bH609x0uMb?usp=sharing" target="_blank"><span id="res"><i class="fa-solid fa-book"></i>&ensp; Resources For Class  10 &ensp;<i class="fa-solid fa-book"></i> &ensp;<i class="fa-solid fa-angles-right"></i> <br>
+    </span></a>
+       </div> </center>
+    <div class="every">
+      <center><h1 class="title">Daily bus for Up-Down</h1></center>
+ 
+    <div class="container5">
+        
+        <div class="image">
+         <img src="./services/bus.jpg"alt="">
+        </div>
+    
+    <div class="paragraph p0">
+        <div class="text">
+         <p>United English Boarding School(UEBS) Transportation Services considers it a privilege and honor to be entrusted to transport the students of our communities to school. It is our goal to have the safest, most productive, and efficient, school bus delivery system ever. We can accomplish this goal by working together with parents, guardians and school staff to ensure that all students are ready for school each day and are fully prepared to actively participate in the learning process.
+
+            Transporting more than 1200 students each school day.  Our drivers and support personnel are highly trained, motivated, and very experienced. We are dedicated to providing transportation services to all eligible students. Remember, the school bus has been proven beyond question to be the safest mode of ground transportation available for our students.
+            
+            I challenge you to assist us in attaining our goal by having your students at our bus stops on time each day and ready to learn. The United English Boarding School Transportation Services is pleased to serve you and your students. Together, we can drive success into our classrooms and assure the brightest future possible for our students.</p>
+        </div>
+    </div>
+    </div>
+</div><hr>
+
+<div class="every">
+    <center><h1 class="title">Montessori Classes For Kid</h1></center>
+    
+    <div class="container5">
+        
+    
+    <div class="paragraph p1">
+        
+        <div class="text ">
+            
+         <p>
+            UEBS Montessori course offers a general overview of the basic principles and practices of Montessori education as they apply to children from birth through adolescence. Participants will explore the history of Montessori education, Montessori’s stage theory of development, the role of the teacher, optimal learning environments for child development, and the development of independence at each stage of life. Participants will engage in these topics through a varied format of readings, lectures, video, and discussion. Together we will discover what it means to “educate a child,” and how adults can best support child development.  <br>
+<b>
+The core goals of this class include:</b>
+<ol>
+ <li> To develop a basic beginning understanding of the Montessori method of education.</li>
+
+ <li>To examine Montessori’s theory of human development from birth to 24 years of age. </li> 
+
+<li> To understand the components of the physical and psychological environment for each stage of development.</li> 
+
+<li>To understand the role of observation as a tool for knowing the child, lesson planning, and assessment. </li> 
+
+<li>To explore the role of the Montessori adult, and the importance of personal self-transformation and self-reflection when guiding young children.</li> 
+         </p>
+        </ol>
+
+        </div>
+    </div>
+    <div class="image">
+        <img src="./services/playing.jpg" alt="">
+       </div>
+    </div></div><hr>
+    <div class="every">
+        <center><h1 class="title">Scout Training</h1></center>
+        
+    <div class="container5">
+       
+      
+        <div class="image">
+            <img src="./silde images/images/scoutimp.jpg" alt="">
+           </div>
+       
+    <div class="paragraph p2">
+        <div class="text">
+         <p> UEBS Provide opportunity to participate in Scout. <br> <br> Scouting’s outdoor program is a critical part of how the Scouts training program develops young leaders. While camping or participating in other outdoor events, your Scouts will challenge themselves to learn skills they’ve never tried before or maybe didn’t think they could do. In doing so,  Scouts will work together as a team to overcome adversity when things don’t go as planned; this is truly the magic of Scouting that no other program does as well.
+
+            To safely offer Scouting’s outdoor program, however, you need a certain set of skills and knowledge – and that’s why you’re required to take Introduction to Outdoor Leader Skills (also known as “IOLS”) Training. You’ll learn how to build a fire, use an axe, cook outdoors, use a map and compass, responsibly care for the outdoors, and much more. Even if you weren’t a Scout as a kid, you’ll come out of this course looking and acting like a seasoned camper. 
+            
+            Note: since Scoutmaster-Specific Training is only a half-day course (roughly 4 hours), you’ll often see the in-person version of that course combined with the IOLS Training course to make the most of your valuable time.</p>
+        </div>
+    </div>
+    </div></div><hr>
+    <div class="every">
+        <center><h1 class="title">Computer Lab </h1></center>
+    <div class="container5">
+       
+    
+    <div class="paragraph p3">
+        <div class="text">
+         <p ALIGN="left" > Blending in the modern age technological society,UEB has dedicated it's whole importance towards modernization to simply every aspect of practical learning as well as to broaden the mind of upcoming generation towards the vast opportunities.  UEB has a standard built computer lab having a cappacity to support a whole class. the lab in itselt has a projector for the ease of teacher and latest computers to facilitate the students whilst also keeping in mind the descipline. UEB has instructed the teacher to be as fluent in computer and programming related aspects to make student crystal clear on hardware as well as sowftware related contents of the computer.
+            UEB will make sure that our children are being as clear as they need to about the technologies. <br><b>-By:Koshish Pokhrel</b> 
+          
+           
+        </p>
+        </div>
+    </div>
+    
+    <div class="image">
+        <img src="./services/it.jpg" alt="">
+       </div>
+    </div></div><hr>
+    <div class="every">
+        <center><h1 class="title">Coaching Classes</h1></center>
+    <div class="container5">
+       
+        <div class="image">
+         <img src="./services/coaching.jpg" alt="">
+        </div>
+    
+    <div class="paragraph p4">
+        <div class="text">
+         <p>UEBS is providing coaching classes for grade 7,8,9,10 specially for garde 8 and 10 Board exams. We provide coaching for Science, Maths, English subjects. This course is ideal for the students who are looking forward to getting the most authentic, systematic and precise preparation. A system which has helped students score high marks in Board Exams without making them compromise on their other academic needs and aspirations.
+
+            A Doubt Removal System for helping students in overcoming the obstacles they have stumbled upon during the span of their preparation. This strengthens their confidence and speeds up the pace of learning. <br><br>
+      
+      <ol>  <b> UEBS Coaching Class  Highlights</b>
+ <li>Test series of NEB pattern till the Final examinations.</li> 
+
+<li>Topics coverage with the mindset that syllabus means the minimum levels.</li> 
+
+<li> Optimum teacher-student ratio.</li>
+
+<li>Preparation for quizzes, class work, homework sheets, oral test assignments etc. also covered as a part of course.</li> 
+
+<li> Expert result oriented faculty dedicated to bringing the best out of every student.</li>
+
+<li> Early completion of a syllabus for more revision time.</li>
+
+<li> The tutors are highly experienced and have a deep understanding of how to understand the needs of the individual.</li>
+</ol>          
+            </p>
+        
+        </div>
+    </div>
+    </div></div><hr>
+    <div class="every">
+        <center><h1 class="title">Weekly Sports&Skill Level Up Program</h1></center>
+    <div class="container5">
+       
+        <div class="image">
+         <img src="./services/skill.jpg ">
+        </div>
+    
+    <div class="paragraph p5">
+        <div class="text">
+         <p>Accelerating in a generation totally narrowed towards education corrupted in books,phones and laptops, physical activites, sports and games seemed to have calmed down.
+            remembering the fact to sharpen the students knowledge, UEBS enlightens the physical strength and agility throught weekly sports programs and frequent championship
+            to encourage the students towards various sports which helps to discover their burried inner talent. UEBS has hired trained coaches to make the students more sharper in certain sport.
+            UEBS has encouraged the students that sports also has a very bright future. <br> <b>-By:Koshish Pokhrel</b>
+        </p>
+        </div>
+    </div>
+    </div></div><hr>
+    
+
+
+    <footer>
+        <div class="containerblock">
+            <div class="element-container">
+                <div class="firstblock">
+                    <h1 style="color: aliceblue;"><b>ABOUT US</b></h1>
+
+                   <a href="./index.html"><img src="./voice of united/logo.png" alt="">
+                    <span id="boarding">United English Boarding school</P></span></a> 
+                
+                <div class="list">
+                    <ul style="gap: 16px;
+                    display: inline-block;
+                    display: flex;
+                    font-size: 23px;
+                    list-style: none;
+                    margin-top: 9%;
+                     ">
+                        <a href="./index.html"><li style="color:#74DFE7;">Home|</li></a>
+                        <a href="./aboutus.html"><li style="color:#74DFE7">About us|</li ></a>
+                       <a href="https://drive.google.com/drive/folders/1CxpICwRO5qeazfzOBvTjP-bH609x0uMb?usp=sharing" target="_blank"> <li style="color:#74DFE7;">Resources|</li></a>
+                        
+                    </ul>
+                   
+                </div>
+            </div></div><hr class="horizontal">
+            <div class="element-container">
+                <h1 style="color:aliceblue;">CONTACT DETAIL</h1>
+                <div class="secondblock">
+                  
+                    <a href="https://www.google.com/maps/place/United+English+Boarding+School/@27.5260314,84.8153262,17z/data=!3m1!4b1!4m5!3m4!1s0x3994c92079059531:0xd45e98ce80c2ee7e!8m2!3d27.5259835!4d84.8153856" target="_ashraf"><span id="location"><i class="fa-solid fa-location-dot"></i> &ensp;  Location:Manahari-8,Simpani</span></a>
+                   <a href="tel:057-414040"><span id="contacts"><i class="fa-solid fa-phone"></i>&ensp; Contact:057-414040</span></a> 
+                   <a href="mailto:academyunited@gmail.com" target="_blank"><span id="emails"><i class="fa-solid fa-envelope" target="_ashraf"></i>&ensp; Email:academyunited@gmail.com</span></a> 
+                    
+
+                </div>
+            </div><hr class="horizontal">
+            <div class="element-container">
+                <div class="thirdblock">
+                    <span>We believe,<br><H1 id="enlight">"EDUCATION FOR ENLIGHTENMENT"</H1></span><br><br>
+                    <span>Follow Us <br>
+                        <a href="https://www.facebook.com/unitedenglishboadingschool"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/unitedenglishboadingschool"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:academyunited@gmail.com"> <i class="fa-solid fa-message" style=" color: orange;"></i></a>
+
+                    </span><br><br>
+                   <a href="./error.html"><span style="color:#D9D9D6 ;">Terms&Condition</span></a> <a href="./error.html"></a>
+                        
+                </div>
+            </div>
+
+          
+
+
+        </div>
+
+
+
+        <div class="privacy">
+            <div class="policy">
+              <a href="./error.html">  <span>Privacy Policy</span></a>
+               <a href="./error.html"><span>Accessibility</span></a> 
+               <a href="./error.html"> <span>Non-Discrimination Policy</span></a>
+
+            </div>
+            
+           
+ 
+            <center> <span>&#169;2022.All Right Reserved|UEBS</span></center>
+           
+           </div>
+           
+    </footer>
+
+
+
+</body>
+</html>
